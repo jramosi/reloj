@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api-ibmetro/:path*",
+            "destination": "https://horaoficial.ibmetro.gob.bo:9191/:path*"
+        }
+    ]
+}
