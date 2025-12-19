@@ -8,7 +8,7 @@ export const TimeProvider = ({ children }) => {
   useEffect(() => {
     let estampaServidor = 0;
     let tiempoReferenciaLocal = 0;
-    const evento = new EventSource("/api-ibmetro/v1/estampa");
+    const evento = new EventSource("https://horaoficial.ibmetro.gob.bo:9191");
 
     const actualizarReloj = () => {
       if (estampaServidor === 0) return;
